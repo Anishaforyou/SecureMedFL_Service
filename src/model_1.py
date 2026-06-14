@@ -5,7 +5,7 @@
 from xgboost import XGBClassifier
 import numpy as np
 
-def train_model(X, y):
+def train_model_xg(X, y):
 
     # Fix labels
     unique_classes = np.unique(y)
