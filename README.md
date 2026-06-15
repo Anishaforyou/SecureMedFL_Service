@@ -78,20 +78,6 @@ SecureMedFL-Service/
 
 ---
 
-## 📊 Model Comparison
-
-| Model               | Accuracy |
-| ------------------- | -------- |
-| Logistic Regression | 88.65%   |
-| Random Forest       | 99.86%   |
-
----
-
-## 📈 Accuracy Comparison
-
-![Accuracy Comparison](images/accuracy_comparison.png)
-
----
 
 ## 🔗 Federated Learning Workflow
 
@@ -181,15 +167,50 @@ python main.py
 
 ---
 
-## 📋 Experimental Results
+## 📊 Experimental Results
 
-### Logistic Regression
+### Logistic Regression Performance
 
 Accuracy: **88.65%**
 
-### Random Forest
+#### Logistic Regression Confusion Matrix
+
+<p align="center">
+  <img src="images/confusion_matrix_lr.png" width="600">
+</p>
+
+---
+
+### Random Forest Performance
 
 Accuracy: **99.86%**
+
+#### Random Forest Confusion Matrix
+
+<p align="center">
+  <img src="images/confusion_matrix_rf.png" width="600">
+</p>
+
+---
+
+### Accuracy Comparison
+
+<p align="center">
+  <img src="images/accuracy_comparison.png" width="700">
+</p>
+
+| Model               | Accuracy |
+| ------------------- | -------- |
+| Logistic Regression | 88.65%   |
+| Random Forest       | 99.86%   |
+
+### Observation
+
+* Logistic Regression achieved an accuracy of **88.65%**.
+* Random Forest achieved an accuracy of **99.86%**.
+* Random Forest outperformed Logistic Regression by approximately **11.21%**.
+* The results indicate that Random Forest is more effective at capturing complex attack patterns in network traffic data.
+
 
 ### Conclusion
 
@@ -200,6 +221,7 @@ Random Forest significantly outperformed Logistic Regression in cyber attack det
 ## 👩‍💻 Author
 
 **Anisha Kundu**
+/n
 **Sreyshi Saha**
 
 B.Tech (Information Technology)
