@@ -176,7 +176,7 @@ Accuracy: **88.65%**
 #### Logistic Regression Confusion Matrix
 
 <p align="center">
-  <img src="images/confusion_matrix_lr.png" width="600">
+  <img src="images/confusion_matrix_IR.png" width="600">
 </p>
 
 ---
@@ -188,7 +188,7 @@ Accuracy: **99.86%**
 #### Random Forest Confusion Matrix
 
 <p align="center">
-  <img src="images/confusion_matrix_rf.png" width="600">
+  <img src="images/confusion_matrix_RF.png" width="600">
 </p>
 
 ---
