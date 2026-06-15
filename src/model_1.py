@@ -1,32 +1,17 @@
 # =========================
-# model.py (FINAL HIGH ACCURACY)
+# model_1.py
+# Logistic Regression
 # =========================
 
-from xgboost import XGBClassifier
-import numpy as np
+from sklearn.linear_model import LogisticRegression
 
-def train_model_xg(X, y):
+def train_model_lr(X_train, y_train):
 
-    # Fix labels
-    unique_classes = np.unique(y)
-    class_mapping = {cls: idx for idx, cls in enumerate(unique_classes)}
-    y_mapped = np.array([class_mapping[val] for val in y])
-
-    model = XGBClassifier(
-        n_estimators=700,
-        max_depth=14,
-        learning_rate=0.02,
-        subsample=0.9,
-        colsample_bytree=0.9,
-        gamma=0.2,
-        reg_lambda=1.5,
-        min_child_weight=3,
-        eval_metric='mlogloss',
+    model = LogisticRegression(
+        max_iter=1000,
         random_state=42
     )
 
-    model.fit(X, y_mapped)
-
-    model.class_mapping = class_mapping
+    model.fit(X_train, y_train)
 
     return model

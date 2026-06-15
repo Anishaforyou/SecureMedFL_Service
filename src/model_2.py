@@ -1,16 +1,12 @@
-# =========================
-# model.py (FINAL HIGH ACCURACY)
-# =========================
-
 from sklearn.ensemble import RandomForestClassifier
-import numpy as np
 
 def train_model_rf(X_train, y_train):
+
     model = RandomForestClassifier(
         n_estimators=100,
         random_state=42
     )
 
     model.fit(X_train, y_train)
-    
+
     return model

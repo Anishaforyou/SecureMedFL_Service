@@ -3,12 +3,12 @@
 # =========================
 
 from sklearn.model_selection import train_test_split
-from src.model_1 import train_model_xg
+from src.model_1 import train_model_lr
 from src.model_2 import train_model_rf
 
 current_model = 2
 if current_model == 1 :
-    train_model = train_model_xg
+    train_model = train_model_lr
 else :
     train_model = train_model_rf
 def split_clients(X, y, num_clients=3):
