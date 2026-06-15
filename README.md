@@ -218,13 +218,14 @@ Random Forest significantly outperformed Logistic Regression in cyber attack det
 
 ---
 
-## 👩‍💻 Author
+👩‍💻 Authors
+Project Team
+Anisha Kundu
+B.Tech, Information Technology
+Dr. B.C. Roy Engineering College
 
-**Anisha Kundu**
-\n
-**Sreyshi Saha**
-
-B.Tech (Information Technology)
+Sreyashi Saha
+B.Tech, Information Technology
 Dr. B.C. Roy Engineering College
 
 ---
